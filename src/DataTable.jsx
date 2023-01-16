@@ -18,7 +18,7 @@ function createData(
 }
 
 const rows = [
-  createData('Homework 1 Git Commands Test', "https://github.com/sachinrajgire", "codepen.com/ci=sdfdfdsf" ),
+  createData('Flex and Grid Responsive Page', "https://github.com/rashmigetme/assignment1", "" ),
   
 ];
 
@@ -44,10 +44,8 @@ export default function DenseTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right"><a href={row.codelink}>GitHub Link</a></TableCell>
+              <TableCell align="right"><a href={row.deployedLink}>Netlify Link</a></TableCell>
             </TableRow>
           ))}
         </TableBody>
